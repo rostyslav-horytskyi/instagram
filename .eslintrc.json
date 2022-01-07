@@ -31,10 +31,17 @@
         "destructuring": "all"
       }
     ],
-    "arrow-body-style": [
-      2,
-      "as-needed"
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
     ],
+    "arrow-body-style": [2, "as-needed"],
     "no-unused-expressions": [
       2,
       {
@@ -69,10 +76,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "radix": 0,
@@ -88,24 +92,18 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "all",
+        "trailingComma": "none",
         "singleQuote": true,
-        "printWidth": 100
+        "printWidth": 80
       }
     ],
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": [
       "warn",
       {
-        "aspects": [
-          "invalidHref"
-        ]
+        "aspects": ["invalidHref"]
       }
     ]
   },
-  "plugins": [
-    "prettier",
-    "react",
-    "react-hooks"
-  ]
+  "plugins": ["prettier", "react", "react-hooks"]
 }
